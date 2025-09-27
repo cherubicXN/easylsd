@@ -19,13 +19,8 @@ From source
 
 ```bash
 # In the repo root
-pip install -e .
-```
-
-Dev extras (formatting, tests):
-
-```bash
-pip install -e .[dev]
+git clone https://github.com/cherubicXN/easylsd.git
+pip install -e easylsd
 ```
 
 
