@@ -51,10 +51,6 @@ def parse_args():
     # Checkpoints and auto-download
     p.add_argument('--ckpt-dir', default=str(Path.home() / '.cache' / 'lipmap' / 'checkpoints'),
                   help='Directory to store/download checkpoints')
-    p.add_argument('--scalelsd-ckpt', default='scalelsd-vitbase-v2-train-sa1b.pt')
-    p.add_argument('--deeplsd-ckpt', default='deeplsd_wireframe.tar')
-    p.add_argument('--hawpv3-ckpt', default='hawpv3-fdc5487a.pth')
-    p.add_argument('--hawpv3-cfg', default='submodules/hawp/hawp/ssl/config/hawpv3.yaml')
     
 
     return p.parse_args()
