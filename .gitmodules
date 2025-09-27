@@ -1,3 +1,3 @@
-[submodule "pytlsd"]
-	path = pytlsd
+[submodule "easylsd/pytlsd"]
+	path = easylsd/pytlsd
 	url = https://github.com/iago-suarez/pytlsd.git
