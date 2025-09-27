@@ -34,6 +34,10 @@ dev = [
   "black>=23",
   "mypy>=1.5",
 ]
+backbones = [
+  "timm>=0.9.0",
+  "yacs>=0.1.8",
+]
 
 
 [tool.setuptools]
