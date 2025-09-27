@@ -26,6 +26,7 @@ dependencies = [
   "matplotlib",
   "timm>=0.9.0",
   "tqdm>=4.64",
+  "pytlsd @ git+https://github.com/iago-suarez/pytlsd.git",
 ]
 
 # Optional runtime extras for submodules
