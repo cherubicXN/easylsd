@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "easylsd"
+version = "0.1.0"
+description = "Simplify installing and using multiple line segment detectors for the lipmap project."
+requires-python = ">=3.8"
+authors = [
+  { name = "Lipmap Team" }
+]
+
+# If you add a top-level README, uncomment:
+# readme = "README.md"
+# If you have a license file, uncomment:
+# license = { file = "LICENSE" }
+
+dependencies = [
+  "numpy>=1.21",
+  "omegaconf>=2.3",
+  "scipy>=1.8",
+  "scikit-image>=0.19",
+  "opencv-python>=4.5",
+  "torch>=2.0",
+  "matplotlib",
+]
+
+# Optional runtime extras for submodules
+[project.optional-dependencies]
+dev = [
+  "pytest>=7",
+  "ruff>=0.4",
+  "black>=23",
+  "mypy>=1.5",
+]
+
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["easylsd*"]

@@ -1,0 +1,70 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Packaging / build outputs
+*.egg-info/
+.eggs/
+dist/
+build/
+wheels/
+pip-wheel-metadata/
+
+# Test and coverage
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Type checking / lint caches
+.mypy_cache/
+.ruff_cache/
+.pytype/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.venv*/
+.env
+.env.*
+
+# IDE / editor
+.vscode/
+.idea/
+*.iml
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Native/C++/CUDA artifacts
+*.so
+*.pyd
+*.dll
+*.dylib
+*.o
+*.obj
+*.a
+*.lib
+*.exp
+*.pdb
+
+# CMake / scikit-build
+CMakeCache.txt
+CMakeFiles/
+cmake-build-*/
+_skbuild/
+
+# Project-specific ignores
+easylsd/pytlsd/build/
+easylsd/pytlsd/*.egg-info/
+easylsd/pytlsd/dist/
+easylsd/pytlsd/.eggs/
+easylsd/pytlsd/__pycache__/
+easylsd/base/**/__pycache__/
+easylsd/models/**/__pycache__/
