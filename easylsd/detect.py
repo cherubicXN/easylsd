@@ -99,10 +99,9 @@ def prepare_model(args):
 
     # Prepare checkpoint paths
     ensure_dir(args.ckpt_dir)
-    scalelsd_ckpt = args.scalelsd_ckpt if osp.isabs(args.scalelsd_ckpt) else osp.join(args.ckpt_dir, args.scalelsd_ckpt)
-    deeplsd_ckpt = args.deeplsd_ckpt if osp.isabs(args.deeplsd_ckpt) else osp.join(args.ckpt_dir, args.deeplsd_ckpt)
-    hawpv3_ckpt = args.hawpv3_ckpt if osp.isabs(args.hawpv3_ckpt) else osp.join(args.ckpt_dir, args.hawpv3_ckpt)
-    hawpv3_cfg = args.hawpv3_cfg
+    scalelsd_ckpt = osp.join(args.ckpt_dir, os.path.basename(URLS_CKPT['scalelsd']))
+    deeplsd_ckpt = osp.join(args.ckpt_dir, os.path.basename(URLS_CKPT['deeplsd']))
+    hawpv3_ckpt = osp.join(args.ckpt_dir, os.path.basename(URLS_CKPT['hawpv3']))
 
     # Detector-specific setup
     if args.mode == 'scalelsd':
