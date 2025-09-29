@@ -26,7 +26,7 @@ pip install -e easylsd
 
 ## Quickstart (CLI)
 
-The package installs a console script `easylsd-detect`.
+The package installs a console script `easylsd`.
 
 Basic examples
 
